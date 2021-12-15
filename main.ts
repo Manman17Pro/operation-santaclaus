@@ -191,7 +191,10 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Player, function (sprite, otherSp
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile8`, function (sprite, location) {
     game.over(false, effects.melt)
 })
-scene.onOverlapTile(SpriteKind.Player, assets.tile`Kaminada 0`, function (sprite, location) {
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile5`, function (sprite, location) {
+    game.over(false, effects.melt)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Kaminadaa, function (sprite, otherSprite) {
     Dwra += 1
     info.setScore(Dwra)
 })
